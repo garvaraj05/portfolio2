@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Events | Model Club BIT Sindri</title>
+    <link rel="stylesheet" href="event.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body class="events-body">
+    <div class="background-glow"></div>
+
+    <header class="main-header">
+    <nav class="navbar glass-effect">
+        <div class="nav-container">
+            <div class="logo">
+                <div class="logo-box">M</div>
+                <div class="logo-text">
+                    <span class="main-title">MODEL CLUB</span>
+                    <span class="sub-title">BIT SINDRI</span>
+                </div>
+            </div>
+
+            <ul class="nav-links" id="nav-menu">
+                <li><a href="index.html" class="nav-item">Home</a></li>
+                <li><a href="events.html" class="nav-item active">Our Events</a></li>
+                <li><a href="#about" class="nav-item">About</a></li>
+                <li><a href="#patronage" class="nav-item">Patronage</a></li>
+                <li><a href="#contact" class="nav-item nav-btn">Contact Us</a></li>
+            </ul>
+
+            <div class="menu-btn" id="mobile-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+</header>
+
+    <header class="events-hero">
+        <h1 class="animate-on-load">OUR EVENTS</h1>
+        <p class="subtitle">Innovate • Compete • Excel</p>
+        <div class="dynamic-line"></div>
+    </header>
+
+    <main class="events-grid-container">
+        
+        <div class="event-card-dynamic reveal">
+            <div class="card-inner">
+                <div class="card-front" style="background-image: url('https://img.freepik.com/free-vector/hacker-operating-laptop-cartoon-vector-icon-illustration-technology-business-icon-concept_138676-4447.jpg');">
+                    <div class="card-badge">Live Now</div>
+                </div>
+                <div class="card-back">
+                    <h3>Case-O-Heist</h3>
+                    <p>Leap to innovate. A case-study competition designed for the sharpest analytical minds.</p>
+                    <a href="#" class="event-btn">Register</a>
+                </div>
+            </div>
+            <div class="card-footer">CASE-O-HEIST</div>
+        </div>
+
+        <div class="event-card-dynamic reveal">
+            <div class="card-inner">
+                <div class="card-front" style="background-image: url('https://img.freepik.com/free-photo/programming-background-with-person-working-with-codes-computer_23-2150010125.jpg');">
+                </div>
+                <div class="card-back">
+                    <h3>E-Hackathon</h3>
+                    <p>Partnered with Siemens. Solve real industrial challenges using hardware and software.</p>
+                    <a href="#" class="event-btn">Explore</a>
+                </div>
+            </div>
+            <div class="card-footer">E-HACKATHON</div>
+        </div>
+
+        <div class="event-card-dynamic reveal">
+            <div class="card-inner">
+                <div class="card-front" style="background-image: url('https://img.freepik.com/free-photo/human-brain-structure-with-circuit-board-elements_23-2150831868.jpg');">
+                </div>
+                <div class="card-back">
+                    <h3>SANDHAAN</h3>
+                    <p>The Flagship Techno-Management Fest of BIT Sindri. A week of pure innovation.</p>
+                    <a href="#" class="event-btn">Flashback</a>
+                </div>
+            </div>
+            <div class="card-footer">SANDHAAN '24</div>
+        </div>
+
+        <div class="event-card-dynamic reveal">
+            <div class="card-inner">
+                <div class="card-front" style="background-image: url('https://img.freepik.com/free-vector/quiz-show-logo-with-question-mark-vector_23-2147598514.jpg');">
+                </div>
+                <div class="card-back">
+                    <h3>ListiQuiz</h3>
+                    <p>A fusion of article writing and technical quizzing on Data Science and AI.</p>
+                    <a href="#" class="event-btn">Results</a>
+                </div>
+            </div>
+            <div class="card-footer">LISTIQUIZ</div>
+        </div>
+
+    </main>
+
+    <footer class="minimal-footer">
+        <p>Created by <span class="highlight">Himanshu Kumar</span> & <span class="highlight">Garv Raj</span></p>
+    </footer>
+
+    <script>
+        // Scroll Reveal
+        window.addEventListener('scroll', () => {
+            const cards = document.querySelectorAll('.reveal');
+            cards.forEach(card => {
+                let windowHeight = window.innerHeight;
+                let revealTop = card.getBoundingClientRect().top;
+                if (revealTop < windowHeight - 50) card.classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>
